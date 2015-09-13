@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width">
+    <title>Register - ARC 2015</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+</head>
+<body>
+
+<!--BEGIN #signup-form -->
+<div id="signup-form">
+    <!--BEGIN #subscribe-inner -->
+    <div id="signup-inner">
+        <div class="clearfix" id="header">
+            <img id="signup-icon" src="../static/img/arc.jpg" alt=""/>
+
+            <h1>Register Team for ARC 2015<br/></h1>
+        </div>
+		<p> Please read the <a href="../guidelines">guidelines</a> before submitting the form.</p>
+
+        <p>Please complete the fields below. <strong>Information can't be changed once sumitted so look thoroughly. Once
+            the form is
+            validated, you will proceed to Step 2 and register your team members.</strong>
+
+
+        </p>
+        <form id="send" action="" method=post>
+
+            {% if error%}
+            <p style="color:red"><strong> ** {{error}} </strong></p>
+            {%endif%}
+            <p>
+                <label for="school">School Name *</label>
+                <input id="school" type="text" name="school" value="" required/>
+            </p>
+
+            <p>
+                <label for="email"> Email (Team Representative)*</label>
+                <input id="email" type="text" name="email" value="" required/>
+            </p>
+
+            <p>
+                <label for="phone">Phone (Team Representative)</label>
+                <input id="phone" type="text" name="phone" value=""/>
+            </p>
+
+            <p>
+                <label for="memcount">Team Members</label>
+                <select name="memcount" required>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+
+                </select>
+            </p>
+
+
+            </p>
+
+
+            <p>
+                <button id="submit" type="submit">Submit</button>
+            </p>
+        </form>
+
+    </div>
+    <!--END #signup-inner -->
+</div>
+<!--END #signup-form -->
+</div>
+
+<script src="../static/js/jquery.js"></script>
+
+
+</body>
+</html>

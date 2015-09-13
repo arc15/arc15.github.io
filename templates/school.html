@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{{super()}}
+
+{% block content %}
+
+<style type="text/css">
+	#portfolio{
+	background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(../static/img/oldbg.JPG);
+
+    background-repeat: none;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+    color: #fff;
+    height: 100%;
+	}
+
+	body{
+	}
+</style>
+
+<section id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Aitchison College</h2>
+
+                <h3 class="section-subheading">The Venue.</h3>
+            </div>
+        </div>
+
+        <div class="row">
+        	
+        	<div class="col-lg-12 text-center">
+        	<p style="color:white;font-size:1.2em">
+        		Aitchison College, Lahore, is one of the most prestigious educational institutions of its kind in South Asia. Established in 1886, it has retained its character over the years, maintaining the public school tradition of providing an education that uses academics, sports and co-curricular activities as tools for character development.<br/><br/>
+
+The initial emphasis, when it was founded, on educating only the sons of the elite of the province has given way a diversified curriculum, more suited to an egalitarian mix of pupils drawn from all parts of our country. Today, our 2,586 pupils are representative of all areas of Pakistan and truly reflective of the demographic mix of our nation.<br/><br/>
+
+Our College has one of the most enviable campuses in the country, spread over almost 200 acres in the heart of the city. The ancient fulcrum of the campus is the majestic Old Building, around which are located our three schools - Junior catering for boys between the ages of 5-10, Preparatory for 11-13 year olds, and Senior for boys between the ages of 14 and 18.   Our College also provides boarding facilities for up to 336 out-station boys in each of the three schools.<br/><br/>
+
+Our College prides itself on being a crucible of the potential leadership of our country. Its list of alumni is one obvious indicator of the significance of its impact on our national governance over the years. Equally significantly, Aitchisonians have made and continue to make their mark in every sphere of our society. The nascent potential and contribution by future Aitchisonians will be the truest measure of the success of our endeavours.<br/><br/>
+</p>
+        	</div>
+
+        </div>
+        
+        
+    </div>
+</section>
+
+{% endblock %}
+
+
+{% block footer %}{% endblock %}
